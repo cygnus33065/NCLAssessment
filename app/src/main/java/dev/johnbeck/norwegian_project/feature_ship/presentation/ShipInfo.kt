@@ -1,6 +1,5 @@
 package dev.johnbeck.norwegian_project.feature_ship.presentation
 
-import android.util.Log
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.material.CircularProgressIndicator
@@ -22,7 +21,6 @@ fun ShipInfo(){
 
 
     if(state.isLoading){
-        Log.e("loading", state.isLoading.toString())
         CircularProgressIndicator()
     }
     Column(
